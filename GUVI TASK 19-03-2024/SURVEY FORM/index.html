@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="form-container">
+        <fieldset>
+            <form action="Submit">
+                <div class="form-group">
+                    <label class="labels required" for="first_name">Name</label>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="first_name" required> <br>
+                            <label for="first">First</label>
+                            
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="last_name" required> <br>
+                            <label for="last">Last</label>
+                        </div>
+                    </div>
+                    <div class = row>
+                        <label class="labels required" for="Email">Email</label> <br>
+                        <input type="text" class="form-control full-width" id="textbox-below-email" required> <br>
+                    </div>
+                    <label  class="labels required" for="Experience">Your Experience</label> <br>
+                    <span class="fa fa-star checked-star"></span>
+                    <span class="fa fa-star checked-star"></span>
+                    <span class="fa fa-star checked-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span> <br>
+                    <label> Overall,How would you rate your experince with us </label> <br>
+                    <label  class="labels required" for="Satisfaction">How statisfied are you with</label> <br>
+                    <table>
+                        <tr>
+                            <thead>
+                                <tr>
+                                    <th col = "scope"></th>
+                                    <th col = "scope">Very unsatisfied</th>
+                                    <th col = "scope">Unsatisfied</th>
+                                    <th col = "scope">Neutral</th>
+                                    <th col = "scope">Satisfied</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th row = "Purchase">Purchase</th>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th row = "Service">Service</th>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th row = "Company">Company Overall</th>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </thead>
+                        </tr>
+                    </table>
+                    <label  class="labels required" for="Recommendation">How Likely are you to</label> <br>
+                    <table>
+                        <tr>
+                            <thead>
+                                <tr>
+                                    <th col = "scope"></th>
+                                    <th col = "scope">Very unsatisfied</th>
+                                    <th col = "scope">Unsatisfied</th>
+                                    <th col = "scope">Neutral</th>
+                                    <th col = "scope">Likely</th>
+                                </tr>
+                                <tbody>
+                                    <tr>
+                                        <th row = "Purchase">Buy From us Again</th>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th row = "Service">Recommned our product to others</th>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th row = "Company">Recommned our company to others</th>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                        <td>
+                                            <input type="radio" name="check">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </thead>
+                        </tr>
+                    </table>
+                    <label class="labels required" for="Additonal Suggestions">Additional comments or suggestions</label> <br>
+                    <input type="text" class="form-control full-width" id="textbox-below-email"> <br>
+                    <div class="submit-button-wrapper">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>

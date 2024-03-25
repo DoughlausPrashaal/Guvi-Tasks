@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    font-family:"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans"
+    sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #ffff;
+
+}
+
+
+.form-container {
+    margin-left: 10%;
+    margin-top: 2%; 
+    display: inline-block; 
+    width: 80vw;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.col {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; 
+}
+.col input {
+    margin-bottom: 5px;
+}
+
+.labels {
+    display: inline-block;
+    margin-top: 5px; 
+}
+.labels label {
+    margin-right: 10px; 
+}
+.required::after {
+    content: '*'; 
+    color: red; 
+    margin-left: 5px; 
+}
+
+.checked-star {
+    color: orange;
+}
+
+/* .form-control.full-width {
+    width: 425px;
+} */
+
+.form-control.full-width {
+    width: 50%;
+    box-sizing: border-box;
+    height: 30px;
+
+    @media screen and (max-width: 767px) {
+        width: 70%;
+        box-sizing: border-box;
+    }
+}
+
+.labels.required {
+    font-weight: bold;
+    font-size: larger;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table th{
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+table td{
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+button[type="submit"] {  
+    background-color: #6c757d;  
+    color: #fff;                 
+    border-color: #6c757d;       
+    border-radius: 5px;           
+    font-weight: bold;          
+    padding: 10px 20px;          
+    cursor: pointer;           
+}
+
+.submit-button-wrapper {
+    margin-top: 10px; /* Adjust the margin-top for desired spacing */
+}
