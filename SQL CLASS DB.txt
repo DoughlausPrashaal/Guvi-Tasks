@@ -1,0 +1,56 @@
+Create Database Class;
+Use Class;
+
+CREATE TABLE Courses (
+    Course_id INT PRIMARY KEY,
+    Course_Name VARCHAR(50),
+    Mentor_Name VARCHAR(50),
+    Description TEXT
+);
+
+INSERT INTO Courses VALUES (1, 'Full Stack Development ', 'Sanjay',
+'Learning Web Development');
+INSERT INTO Courses VALUES (2, 'Data Science ', 'Satish',
+'Learning Data Science');
+INSERT INTO Courses VALUES (3, 'Java and Data Structures ', 'Sanjay',
+'Learn  Java and Data Structures');
+
+
+
+CREATE TABLE Batches (
+    batch_id INT PRIMARY KEY,
+    batch_name varchar(50),
+    course_id INT,
+    start_date DATE,
+    end_date DATE,
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id)
+);
+
+Insert Into Batches values (1,'FSD57-WD',1,'2024-01-01','2024-04-01');
+Insert Into Batches values (2,'FSD57-WE',1,'2024-01-01','2024-06-01');
+Insert Into Batches values (3,'DS57-WD',2,'2024-01-01','2024-05-01');
+Insert Into Batches values (4,'DS57-WE',2,'2024-01-01','2024-07-01');
+Insert Into Batches values (5,'JDS57-WD',3,'2024-01-01','2024-04-01');
+Insert Into Batches values (6,'JDS57-WE',3,'2024-01-01','2024-06-01');
+
+
+CREATE TABLE Students (
+    student_id INT PRIMARY KEY,
+    name VARCHAR(50),
+    email VARCHAR(50),
+    phone_number VARCHAR(20),
+    course_id INT,
+    batch_id INT,
+    FOREIGN KEY (course_id) REFERENCES Courses(course_id),
+    FOREIGN KEY (batch_id) REFERENCES Batches(batch_id)
+);
+
+Insert Into Students values (1,'Prashaal','Prashaal100@gmail.com','6382445922',1,1);
+Insert Into Students values (2,'Thomas','Thomas@hotmail.com','8015083000',1,1);
+Insert Into Students values (3,'Rachel','Rachel@yahoo.com','9886222002',1,1);
+Insert Into Students values (4,'ABEL','Abel@gmail.com','1234567890',1,2);
+Insert Into Students values (5,'Sathish','Sathish@gmail.com','1567728490',1,2);
+Insert Into Students values (6,'Kiran','Kiran@gmail.com','8567728490',2,3);
+Insert Into Students values (7,'Kishore','Kishoren@gmail.com','8867828490',2,3);
+Insert Into Students values (8,'Benny','Benny@gmail.com','8867825490',2,4);
+Insert Into Students values (10,'Babu','Babu@hotmail.com','7866725490',3,6);
